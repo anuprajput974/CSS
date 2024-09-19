@@ -1,0 +1,33 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid black;
+    display: flex;
+}
+.box{
+    border: 2px solid yellow;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    /*transition: 2s;*/
+
+   /* transition-property:background-color;
+    transition-delay: 5s;
+    transition: transform 3s cubic-bezier(0,-0.58, 0, 1.33) ;*/
+
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0,-0.58, 0, 1.33);
+    transition-delay:1s;
+
+   /* transition:  3s ease 1s;*/
+
+}   
+.box:hover{
+    background-color: brown;
+    transform: rotate(360deg) translateX(500px);
+
+   
+}
